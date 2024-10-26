@@ -20,7 +20,7 @@ export class AppComponent {
     }
   ];
   onUserContact(email: string) {
-    console.log(`contacter l'utilisateur: {$email}`);
+    console.log(`contacter l'utilisateur: ${email}`);
     
   }
 }

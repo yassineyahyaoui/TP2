@@ -1,0 +1,17 @@
+<p>cp-directive works!</p>
+<h3> Directives structurelles</h3>
+<p *ngIf="isVisible">Ce texte est visible uniquement si <code>isVisible</code> est vrai. </p> <button
+    (click)="toggleVisibility()">Basculer visibilité</button>
+<h4> Liste des fruits</h4>
+<ul>
+    <li *ngFor="let fruit of fruits"> {{ fruit }} </li>
+</ul>
+<h3> Directives d'attribut</h3>
+<p [ngClass]="{'highlight': isHighlighted}">Ce texte change de style selon
+    <code>isHighlighted</code>
+</p>
+<button (click)="toggleHighlight()">Basculer brillance</button>
+
+<p [ngStyle]="{'color': isHighlighted? 'red' : 'black'}">
+    Ce texte change de couleur selon <code>isHighlited</code>
+</p>
